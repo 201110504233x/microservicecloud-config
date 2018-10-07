@@ -5,6 +5,7 @@ spring:
 ---
 server:
   port: 8005
+
 spring:
   profiles: dev
   application:
@@ -13,11 +14,12 @@ spring:
 eureka:
   client:
     service-url:
-      detaultZone: http://eureka-dev.com:7001/eureka
+      defaultZone: http://eureka-dev.com:7001/eureka
 
 ---
 server:
   port: 8006
+
 spring:
   profiles: test
   application:
@@ -26,4 +28,4 @@ spring:
 eureka:
   client:
     service-url:
-      detaultZone: http://eureka-test.com:7001/eureka
+      defaultZone: http://eureka-test.com:7001/eureka
